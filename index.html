@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktapplikation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="header">
+        <h1>Kontaktapplikation</h1>
+        <img class="kontakt-img" src="kontakt.png" alt="contakt-icon" />
+      </div>
+
+      <h2>Lägg till ny kontakt</h2>
+      <form id="contact-form">
+        <input
+          type="text"
+          id="contact-name"
+          name="contact-name"
+          placeholder="Namn"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          id="contact-number"
+          name="contact-number"
+          placeholder="Telefonnummer"
+          required
+        />
+        <br />
+        <button type="button" id="add-contact">Skapa</button>
+        <button type="button" id="delete-all-btn">Radera lista</button>
+      </form>
+      <div id="error-message" class="error-message"></div>
+
+
+      <h2>Kontaktlista</h2>
+      <ul id="contact-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
